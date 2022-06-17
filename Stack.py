@@ -20,6 +20,7 @@ class MainWindow(Gtk.ApplicationWindow):
         b.add_titled(Gtk.Label(label="XOX"),"xox","Xox")
         b.add_titled(Gtk.Label(label="LOL"),"lol","Lol")
 
+        self.d=Adw.ViewSwitcherTitle()
         self.d.set_stack(b)
         self.d.set_title("LOL")
         self.hb.set_title_widget(self.d)
