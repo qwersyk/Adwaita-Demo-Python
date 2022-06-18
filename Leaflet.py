@@ -49,9 +49,9 @@ class Main(Adw.Application):
         self.win = MainWindow(application=self)
         self.win.present()
 
-def main():
+def main(version):
     app = Main()
     app.run(sys.argv)
 
 if __name__ == '__main__':
-    main()
+    main(None)
